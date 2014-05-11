@@ -6,7 +6,6 @@ SCC <- readRDS("../data/Source_Classification_Code.rds")
 BaltimoreNEI <- subset(NEI, fips == "24510")
 aggregated <- aggregate(Emissions~year + type ,sum,data=BaltimoreNEI)
 
-
 #plot and add regression line
 library(ggplot2)
 qplot(year, Emissions, data=aggregated, facets=.~type, ylab="PM25 Emissions (tons)", main="PM25 Emissions by type of source, Baltimore") + geom_smooth(method="lm")
