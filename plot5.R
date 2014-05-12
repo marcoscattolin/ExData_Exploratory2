@@ -12,10 +12,10 @@ totBaltimoreVehicleEmissions <- tapply(baltimoreVehicleEmissions$Emissions,balti
 
 #plot
 barplot(totBaltimoreVehicleEmissions, ylab="Emissions (tons)", 
-        xlab = "year", main="PM25 Emissions from Motor Vehicles, Baltimore", 
+        xlab = "year", main="PM25 Emissions from \nMotor Vehicles, Baltimore", 
         col="wheat1")
 
 
 #save plot to png
-dev.copy(png,"plot5.png")
+dev.copy(png,"plot5.png", width= 800, height=600)
 dev.off()

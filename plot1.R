@@ -8,5 +8,5 @@ barplot(totalEmission, ylab="Emissions (tons)",
         xlab = "year", main="PM25 Total Emissions, US", col="blue")
 
 #save to png
-dev.copy(png,"plot1.png")
+dev.copy(png,"plot1.png", width=800, height=600)
 dev.off()

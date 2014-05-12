@@ -18,5 +18,5 @@ abline(model, lwd=2, col="red", lty=2)
 legend("bottomleft", legend=c("PM25 Emissions (tons)","Linear regression"), lwd=c(2,2), lty=c(1,2), col=c("blue","red"))
 
 #save plot to png
-dev.copy(png,"plot2.png")
+dev.copy(png,"plot2.png", width=800, height=600)
 dev.off()
